@@ -1,0 +1,15 @@
+#quoteCard{
+    text-align: center;
+    background-color: rgb(223, 221, 183);
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 20vh;
+    padding-top: 10vh;
+    border-radius: 15px 50px;   
+   
+}
+.button{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
