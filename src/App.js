@@ -38,7 +38,11 @@ function App() {
         dataAuthor={author} 
         dataQuote={quote}
        />
-        <button id='new-quote' className="button m-4" onClick={DataSet} style={{backgroundColor:"rgb(189, 187, 153)",}}>New Quote</button>
+        <button id='new-quote' className="button" onClick={DataSet} style={{backgroundColor:"rgb(189, 187, 153)",}}>New Quote</button>
+        <SocialBtns
+          dataAuthor={author} 
+          dataQuote={quote}
+        />
       </>
   );
   /*const boton=document.querySelector(`#new-quote`);
@@ -47,7 +51,5 @@ function App() {
   DataSet()
 });*/
 }
-
 export default App;
-/* <p>{quote}</p>
-        <p>{`${author||'Anonymous'}`}</p>*/
+

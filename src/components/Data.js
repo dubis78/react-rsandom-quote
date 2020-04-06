@@ -7,43 +7,27 @@ export const Data={
     iconsData:[
         {
             icon:'fa fa-twitter m-2',
-            url:'#profile',
+            url:'https://twitter.com/intent/tweet?hashtags=quotes&amp;text=',
             iconColor:'#2196f3',
+            id:'tweet-quote',
         },
         {
             icon:'fa fa-tumblr m-2',
-            url:'#education', 
+            url:'//www.tumblr.com/share;content=', 
             iconColor:'#34526f',
+            id:'tumblr-quote',
         },        
         {
             icon:'fa fa-instagram m-2',
-            url:'#portfolio', 
+            url:'https://www.instagram.com/', 
             iconColor:'#C13584', 
         },
         {
             icon:'fa fa-facebook m-2',
-            url:'#portfolio', 
+            url:'https://www.facebook.com', 
             iconColor:'#3f51b5',
         },        
-    ],
-    /*portfolioData:[
-        {
-           img:'img2',
-            url:'https://dubis78.github.io/tienda-f',
-        },
-        {
-           img:'img3',
-            url:'https://dubis78.github.io/formulario/Index.html', 
-        },
-        {
-           img:'img4',
-            url:'https://dubis78.github.io/Tribute-Page/Index.html', 
-        },
-        {
-           img:'img5',
-            url:'https://dubis78.github.io/Reto-1/', 
-        },       
-    ],*/
+    ]    
 }
 export default Data;
 

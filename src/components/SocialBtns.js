@@ -2,13 +2,13 @@ import React from 'react';
 import './css/SocialBtns.css';
 import {Data} from './Data'
 
-const SocialBtns=()=>{   
+const SocialBtns=(props)=>{   
     return(
         <div className='container'>
             <div className='row justify-content-center'>
             {Data.iconsData.map((iconInfo,index)=>{
                 return(                
-                    <a key={`label${index}`} className="button" id="tweet-quote" title="Tweet this quote!" target="_blank" href="https://twitter.com/intent/tweet?hashtags=quotes&amp;text=%22Dreaming%2C%20after%20all%2C%20is%20a%20form%20of%20planning.%22%20Gloria%20Steinem">
+                    <a key={`label${index}`} className="button" id="tweet-quote" title="Tweet this quote!" target="_blank" href={iconInfo.url+`\"${props.dataQuote}\"   `+props.dataAuthor}>
                         <i className={iconInfo.icon} style={{backgroundColor:`${iconInfo.iconColor}`,color:`#fff`}}></i>
                     </a>               
                 )
@@ -18,3 +18,5 @@ const SocialBtns=()=>{
     );
 }
 export default SocialBtns;
+
+//`https://twitter.com/intent/tweet?hashtags=quotes&amp;text=\"${props.dataQuote}\"         ${props.dataAuthor ||'Anonymous'}`
